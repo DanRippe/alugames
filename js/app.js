@@ -4,17 +4,13 @@ function alterarStatus(idGame) {
     let itemButton = document.getElementById(`game-${idGame}`).querySelector('a');
     
     if (itemImage.classList.contains('dashboard__item__img--rented')) {
-        itemImage.classList.remove('dashboard__item__img--rented');        
-    } else {
-        itemImage.classList.add('dashboard__item__img--rented');        
-    }
-
-    if (itemButton.classList.contains('dashboard__item__button--return')) {
+        itemImage.classList.remove('dashboard__item__img--rented');
         itemButton.classList.remove('dashboard__item__button--return');
-        itemButton.text = 'Alugar';
+        itemButton.text = 'Alugar';        
     } else {
+        itemImage.classList.add('dashboard__item__img--rented');
         itemButton.classList.add('dashboard__item__button--return');
-        itemButton.text = 'Devolver';
-    }
-    
+        itemButton.text = 'Devolver';        
+    }    
+
 }
