@@ -15,8 +15,7 @@ function alterarStatus(gameIndex) {
 
     let itemImage = document.getElementById(idGame).querySelector('div');
     let itemButton = document.getElementById(idGame).querySelector('a');
-    console.log(itemButton);
-
+    
     if (itemImage.classList.contains('dashboard__item__img--rented')) {
         itemImage.classList.remove('dashboard__item__img--rented');        
     } else {
